@@ -16,9 +16,9 @@ The new index.html files must have this edit to reach esisting assets folder:
 
 This;
 
-<img src="./assets/logo.png" alt="Dr Stephenson's Mech-Checker" class="logo">
+# <img src="./assets/logo.png" alt="Dr Stephenson's Mech-Checker" class="logo">)
 
 to;
 
-<img src="../../assets/logo.png" alt="Dr Stephenson's Mech-Checker" class="logo">
+# <img src="../../assets/logo.png" alt="Dr Stephenson's Mech-Checker" class="logo">
 
