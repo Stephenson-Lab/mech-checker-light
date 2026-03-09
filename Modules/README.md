@@ -1,24 +1,149 @@
-Stephenen_Lab Development notes (Notes to self)
+# Stephenson Lab – Development Notes
 
-This directory has been added to allow the safe introduction of questions for new modules without affecting existing ones.
+## Purpose of this directory
 
-Initially, it will contain a replicated set of the CHE4101B questions, which are currently located in the default index. These can later be migrated to Blackboard outside of term time.This directory has been added to allow the safe introduction of questions for new modules without affecting existing ones.
+This directory exists to allow new modules and question sets to be added safely without affecting the currently deployed version of the Mech-Checker.
 
-Initially, it will contain a replicated set of the CHE4101B questions, which are currently located in the default index. These can later be migrated to Blackboard outside of term time.
+The root of the repository currently serves the original module via:
 
-e.g. new Blackboard link structure would be (<module2> replaced with the actual module number, e.g. CHE4101B etc):
-.../mech-checker-light/?task=1 <-- Defaults to orginal CHE4101B index.html and tasks.js 
-.../mech-checker-light/modules/CHE4101B/?task=1 <-- New uses its own index.html and tasks.js Replicate of orginal
-.../mech-checker-light/modules/module2/?task=2 <-- New uses its own index.html and tasks.js
-.../mech-checker-light/modules/module3/?task=1 <-- New uses its own index.html and tasks.js
+```text
+index.html
+tasks.js
+```
 
-The new index.html files must have this edit to reach esisting assets folder:
+Those files are actively used by existing Blackboard links, so they should not be modified during term time.
 
-This;
+Instead, new modules should be created inside the `modules/` directory, where each module has its own independent `index.html` and `tasks.js`.
 
-"./assets/logo.png"
+This ensures that changes to one module cannot accidentally break another.
 
-to;
+---
 
-"../../assets/logo.png"
+## Initial migration plan
+
+Initially, this directory will contain a replicated version of the CHE4101B questions that currently live in the root `index.html` and `tasks.js`.
+
+During a future maintenance period, for example outside term time, Blackboard links can be migrated to point to the module-specific version.
+
+---
+
+## Blackboard link structure
+
+Current structure (default root version):
+
+```text
+.../mech-checker-light/?task=1
+```
+
+This loads:
+
+```text
+index.html
+tasks.js
+```
+
+Future structure using module directories:
+
+```text
+.../mech-checker-light/modules/CHE4101B/?task=1
+```
+
+Example structure for additional modules:
+
+```text
+.../mech-checker-light/modules/module2/?task=1
+.../mech-checker-light/modules/module2/?task=2
+.../mech-checker-light/modules/module3/?task=1
+```
+
+Each module directory contains its own:
+
+```text
+index.html
+tasks.js
+```
+
+---
+
+## Important path change in module index files
+
+When copying the root `index.html` into a module directory, the logo path must be updated so that it can still reach the shared assets folder.
+
+Change this:
+
+```text
+./assets/logo.png
+```
+
+to:
+
+```text
+../../assets/logo.png
+```
+
+Explanation:
+
+```text
+./assets/logo.png
+```
+
+looks for an `assets` folder inside the module directory.
+
+```text
+../../assets/logo.png
+```
+
+correctly navigates back to the repository root where the shared assets folder lives.
+
+---
+
+## Important: do not change this path
+
+The tasks file reference should remain unchanged:
+
+```text
+./tasks.js
+```
+
+This ensures that each module loads the `tasks.js` file inside its own folder, keeping question sets isolated.
+
+---
+
+## Design choice
+
+An alternative architecture would allow a single index file to dynamically load multiple task files.
+
+However, the current structure was chosen because it is:
+
+- simpler
+- easier to reason about
+- less likely to break existing modules
+- safer when committing directly to the `main` branch while modules are live
+
+Each module is therefore self-contained.
+
+---
+
+## Workflow for creating a new module
+
+1. Copy an existing working module folder.
+2. Rename the folder, for example `module3` or `CHE4201A`.
+3. Edit only the `tasks.js` file inside that folder.
+
+In most cases no changes to `index.html` are required.
+
+Example structure:
+
+```text
+modules/
+  module2/
+    index.html
+    tasks.js
+
+  module3/
+    index.html
+    tasks.js
+```
+
+This keeps development simple and minimises the risk of breaking existing modules.
 
