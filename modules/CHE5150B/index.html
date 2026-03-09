@@ -160,13 +160,17 @@
         return;
       }
 
+      // Use the first accepted answer to generate the expected formula automatically
+      const expectedMol = OCL.Molecule.fromSmiles(currentTask.answersSmiles[0]);
+      const expectedFormula = expectedMol.getMolecularFormula().formula;
+
       const studentFormula = studentMol.getMolecularFormula().formula;
-      if (studentFormula !== currentTask.formula) {
+      if (studentFormula !== expectedFormula) {
         showMsg(
           "Formula mismatch.\nYou drew: " +
           studentFormula +
           "\nExpected: " +
-          currentTask.formula
+          expectedFormula
         );
         return;
       }
