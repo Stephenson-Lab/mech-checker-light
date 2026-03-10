@@ -122,6 +122,8 @@ Displayed heading for the question.
 **formula**  
 Expected molecular formula. Must match the calculated formula of the correct structure.
 
+**NB** The formula field is defunct in newer versions of the index file found in the module versions. In these later versions OpenChemLib generates the formula from the expected answer smiles. This prevents issues with Element order differences, and streamlines new question addition workflows.
+
 **requireStereo**  
 `true` — stereochemistry must match exactly.  
 `false` — stereochemistry is ignored.
@@ -136,6 +138,7 @@ Multiple entries may be included to allow equivalent or alternative correct answ
 ---
 
 ## Adding a New Question
+**NB** The formula field is defunct in newer versions of the index file found in the module versions.
 
 To add Question 11:
 
@@ -153,6 +156,12 @@ To add Question 11:
 3. Access via:
 
 https://stephenson-lab.github.io/mech-checker-light/?task=11
+
+Or 
+
+https://stephenson-lab.github.io/mech-checker-light/modules/modulenumber/?task=11
+
+where "modulenumber" = the unique module number associated with that set of new questions 
 
 ---
 
