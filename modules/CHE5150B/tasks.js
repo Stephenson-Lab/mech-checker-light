@@ -29,5 +29,6 @@ You may attempt the activity multiple times. This tool is intended for formative
   4: { title: "CHE-5150B - Q3", formula: "This field is defunct - now generated from smiles",  requireStereo: false, prompt: "What is the structure of the missing product or intermediate on Blackboard?", answersSmiles: ["OC(C(NC(C1=CC=C(N([H])CC2N(CC3C(SCF)N([C@H]4C[C@H](O)[C@@H](COP([O-])([O-])=O)O4)C(NC3=O)=O)C5=C(NC2)NC(N)=NC5=O)C=C1)=O)CCC(O)=O)=O"] },
   5: { title: "CHE-5150B - Q4", formula: "This field is defunct - now generated from smiles",  requireStereo: false, prompt: "Draw your fluorinated analogue.", answersSmiles: ["O=C1C(F)=CNC(N1)=O"] },
   6: { title: "CHE-5150B - Q5", formula: "This field is defunct - now generated from smiles",  requireStereo: false, prompt: "Draw the structure of the missing product", answersSmiles: ["O=CC(C=CC=C1)=C1C(O)=O"] },
-  7: { title: "CHE-5150B - Q6", formula: "This field is defunct - now generated from smiles",  requireStereo: false, prompt: "Edit", answersSmiles: [""] },
+  7: { title: "CHE-5150B - Q6", formula: "This field is defunct - now generated from smiles",  requireStereo: false, prompt: "Draw the structure of the missing product", answersSmiles: ["O=C(O)[C@@H](NC(C)=O)[C@@H]1N=C(C(O)=O)C(CS1)=C"] },
+  8: { title: "CHE-5150B - Q7", formula: "This field is defunct - now generated from smiles",  requireStereo: false, prompt: "Edit", answersSmiles: [""] },
 };
