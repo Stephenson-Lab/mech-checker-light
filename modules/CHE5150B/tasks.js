@@ -33,5 +33,5 @@ You may attempt the activity multiple times. This tool is intended for formative
   8: { title: "CHE-5150B - Q7", formula: "This field is defunct - now generated from smiles",  requireStereo: false, prompt: "Draw the structure of the missing intermediate - use F to represent R!", answersSmiles: ["O=C(O)[C@@H](/C(O1)=C/CO)N[C@H]1CC(OCF)=O"] },
   9: { title: "CHE-5150B - Q8", formula: "This field is defunct - now generated from smiles",  requireStereo: false, prompt: "Draw the full structure including your placement of the additional methyl group", answersSmiles: ["Cc3ccc(NC(=O)c2ccc(CN1CCN(C)CC1)cc2)cc3Nc5nccc(c4cccnc4)n5"] },
   10: { title: "CHE-5150B - Q9 (Curve Ball)", formula: "C3H7NO3", requireStereo: true, prompt: "This is a Curve Ball of a question - Draw the amino acid L-serine.", answersSmiles: ["N[C@@H](CO)C(=O)O"] },
-  11: { title: "test ag", formula: "C30H33N7O", requireStereo: false, prompt: "again new test", answersSmiles: ["Cc3ccc(NC(=O)c2ccc([C@H](C)N1CCN(C)CC1)cc2)cc3Nc5nccc(c4cccnc4)n5"] },
+  11: { title: "CHE-5150B - Q10", formula: "C16H19N3O4S", requireStereo: false, prompt: "Draw the Zwitterion ion form.", answersSmiles: ["CC3(C)S[C@@H]2[C@H](NC(=O)[C@H]([NH3+])c1ccccc1)C(=O)N2[C@H]3C(=O)[O-]"] },
 };
