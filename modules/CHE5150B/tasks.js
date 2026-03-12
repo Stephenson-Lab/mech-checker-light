@@ -35,10 +35,10 @@ You may attempt the activity multiple times. This tool is intended for formative
   10: { title: "CHE-5150B - Q10", formula: "This field is defunct - now generated from smiles",  requireStereo: false, prompt: "Edit", answersSmiles: [""] },
   11: { title: "CHE-5150B - Q11", formula: "This field is defunct - now generated from smiles",  requireStereo: false, prompt: "Edit", answersSmiles: [""] },
   12: {
-  title: "Test Q",
-  formula: "C29H31N7O",
-  requireStereo: false,
-  prompt: "Just testing",
-  answersSmiles: ["CN5(CCN(CC4(=CC=C(C(NC3(=CC=C(C)C(NC2(=NC(C1(=CN=CC=C1))=CC=N2))=C3))=O)C=C4))CC5)"]
-},
+      title: "Testing",
+      formula: "C29H31N7O",
+      requireStereo: false,
+      prompt: "Test working question",
+      answersSmiles: ["CN5(CCN(CC4(=CC=C(C(NC3(=CC=C(C)C(NC2(=NC(C1(=CN=CC=C1))=CC=N2))=C3))=O)C=C4))CC5)"]
+      },
 };
