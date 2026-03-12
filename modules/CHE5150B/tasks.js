@@ -32,5 +32,5 @@ You may attempt the activity multiple times. This tool is intended for formative
   7: { title: "CHE-5150B - Q6", formula: "This field is defunct - now generated from smiles",  requireStereo: false, prompt: "Draw the structure of the missing product", answersSmiles: ["O=C(O)[C@@H](NC(C)=O)[C@@H]1N=C(C(O)=O)C(CS1)=C"] },
   8: { title: "CHE-5150B - Q7", formula: "This field is defunct - now generated from smiles",  requireStereo: false, prompt: "Draw the structure of the missing intermediate - use F to represent R!", answersSmiles: ["O=C(O)[C@@H](/C(O1)=C/CO)N[C@H]1CC(OCF)=O"] },
   9: { title: "CHE-5150B - Q8", formula: "This field is defunct - now generated from smiles",  requireStereo: false, prompt: "Draw the full structure including your placement of the additional methyl group", answersSmiles: ["Cc3ccc(NC(=O)c2ccc(CN1CCN(C)CC1)cc2)cc3Nc5nccc(c4cccnc4)n5"] },
-  10: { title: "CHE-5150B - Q9 (Curve Ball)", formula: "C3H7NO3", requireStereo: true, prompt: "This is a Curve Ball of a question - Draw the amino acid L-serine.", answersSmiles: ["NC(CO)C(=O)O"] },
+  10: { title: "CHE-5150B - Q9 (Curve Ball)", formula: "C3H7NO3", requireStereo: true, prompt: "This is a Curve Ball of a question - Draw the amino acid L-serine.", answersSmiles: ["N[C@@H](CO)C(=O)O"] },
 };
