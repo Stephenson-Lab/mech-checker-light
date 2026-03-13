@@ -37,4 +37,5 @@ You may attempt the activity multiple times. This tool is intended for formative
   12: { title: "CHE-5150B - Q11", formula: "C19H21NO4", requireStereo: false, prompt: "Draw the structure with your acetyl group(s) added.", answersSmiles: ["CC(=O)O[C@H]1C=CC2C3Cc4ccc(O)c5O[C@@H]1[C@]2(CCN3C)c45"] },
   13: { title: "CHE-5150B - Q12", formula: "C19H21NO3", requireStereo: false, prompt: "Draw the structure of the missing product.", answersSmiles: ["C=CCN4CC[C@]23c1c5ccc(O)c1O[C@H]2[C@@H](O)C=CC3C4C5"] },
   14: { title: "CHE-5150B - Q13", formula: "C13H20N2O2", requireStereo: false, prompt: "Draw the missing resonance structure.", answersSmiles: ["CCN(CC)CCOC([O-])=c1ccc(=[NH2+])cc1"] },
+  15: { title: "CHE-5150B - Q14", formula: "C4H10N2O2ClP", requireStereo: false, prompt: "Draw the missing intermediate.", answersSmiles: ["NP(=O)([O-])[N+]1(CCCl)CC1"] },
 };
