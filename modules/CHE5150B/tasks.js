@@ -34,4 +34,5 @@ You may attempt the activity multiple times. This tool is intended for formative
   9: { title: "CHE-5150B - Q8", formula: "This field is defunct - now generated from smiles",  requireStereo: false, prompt: "Draw the full structure including your placement of the additional methyl group", answersSmiles: ["Cc3ccc(NC(=O)c2ccc(CN1CCN(C)CC1)cc2)cc3Nc5nccc(c4cccnc4)n5"] },
   10: { title: "CHE-5150B - Q9 (Curve Ball)", formula: "C3H7NO3", requireStereo: true, prompt: "This is a Curve Ball of a question - Draw the amino acid L-serine.", answersSmiles: ["N[C@@H](CO)C(=O)O"] },
   11: { title: "CHE-5150B - Q10", formula: "C16H19N3O4S", requireStereo: false, prompt: "Draw the Zwitterion ion form.", answersSmiles: ["CC3(C)S[C@@H]2[C@H](NC(=O)[C@H]([NH3+])c1ccccc1)C(=O)N2[C@H]3C(=O)[O-]"] },
+  12: { title: "CHE-5150B - Q11", formula: "C21H23NO5", requireStereo: false, prompt: "Test conflict", answersSmiles: ["CC(=O)Oc1ccc2CC5C3C=C[C@H](OC(C)=O)[C@@H]4Oc1c2[C@]34CCN5C", "CC(=O)O[C@H]1C=CC2C3Cc4ccc(O)c5O[C@@H]1[C@]2(CCN3C)c45"] },
 };
