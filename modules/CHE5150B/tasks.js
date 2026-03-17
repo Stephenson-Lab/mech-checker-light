@@ -38,4 +38,5 @@ You may attempt the activity multiple times. This tool is intended for formative
   13: { title: "CHE-5150B - Q12", formula: "C19H21NO3", requireStereo: false, prompt: "Draw the structure of the missing product.", answersSmiles: ["C=CCN4CC[C@]23c1c5ccc(O)c1O[C@H]2[C@@H](O)C=CC3C4C5"] },
   14: { title: "CHE-5150B - Q13", formula: "C13H20N2O2", requireStereo: false, prompt: "Draw the missing resonance structure.", answersSmiles: ["CCN(CC)CCOC([O-])=c1ccc(=[NH2+])cc1"] },
   15: { title: "CHE-5150B - Q14", formula: "C4H10N2O2ClP", requireStereo: false, prompt: "Draw the missing intermediate.", answersSmiles: ["NP(=O)([O-])[N+]1(CCCl)CC1"] },
+  16: { title: "CHE-5150B - Q15", formula: "C20H18N6O2F", requireStereo: false, prompt: "Draw the missing product - remember to use F to represent R.", answersSmiles: ["CC(=O)N3C[C@@H](Cn2cnc(=[NH2+])c1ncn(F)c12)c4c3cc(O)c5ccccc45"] },
 };
