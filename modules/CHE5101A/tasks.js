@@ -26,5 +26,5 @@ You may attempt the activity multiple times. This tool is intended for formative
 },
   2: { title: "CHE-5101A - Q1", formula: "This field is defunct - now generated from smiles", requireStereo: false, prompt: "Draw the missing structure in the Blackboard question", answersSmiles: ["Oc1ccccc1"] },
   3: { title: "CHE-5101A - Q2", formula: "This field is defunct - now generated from smiles", requireStereo: false, prompt: "Draw the missing structure in the Blackboard question", answersSmiles: ["[O-]C=c1cccc[cH+]1"] },
-  4: { title: "CHE-5101A", formula: "This field is defunct - now generated from smiles", requireStereo: false, prompt: "Redraw the structure with your added bond requested in the Blackboard question?", answersSmiles: ["CCc2cc([C@H](C)O)c1cc[nH]c1c2"] },
+  4: { title: "CHE-5101A - Q3", formula: "This field is defunct - now generated from smiles", requireStereo: false, prompt: "Redraw the structure with your added bond requested in the Blackboard question?", answersSmiles: ["CCc2cc([C@H](C)O)c1cc[nH]c1c2"] },
 };
