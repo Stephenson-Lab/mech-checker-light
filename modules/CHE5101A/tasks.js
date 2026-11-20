@@ -24,5 +24,6 @@ The tool evaluates your response against the expected answer for the task, check
 You may attempt the activity multiple times. This tool is intended for formative practice only.`,
   answersSmiles: ["O=C(O)c1ccccc1"]
 },
-  2: { title: "CHE-5101A - Q1", formula: "This field is defunct - now generated from smiles", requireStereo: false, prompt: "What is the structure of the missing product or intermediate on Blackboard?", answersSmiles: ["Oc1ccccc1"] },
+  2: { title: "CHE-5101A - Q1", formula: "This field is defunct - now generated from smiles", requireStereo: false, prompt: "Draw the missing structure in the Blackboard question", answersSmiles: ["Oc1ccccc1"] },
+  3: { title: "CHE-5101A", formula: "This field is defunct - now generated from smiles", requireStereo: false, prompt: "Draw the missing structure in the Blackboard question", answersSmiles: ["O=N([O-])=c1cccc[cH+]1"] },
 };
